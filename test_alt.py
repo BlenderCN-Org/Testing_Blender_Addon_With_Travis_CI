@@ -16,5 +16,5 @@ if __name__ == "__main__":
         result = bpy.ops.object.test_ops_2()
         assert result == {'FINISHED'}, "test_ops_2にエラーが存在します"       # オブジェクト「Cube」は削除済みのためエラーとなる
     except AssertionError as e:
-        print e
+        print(e)
         sys.exit(1)
